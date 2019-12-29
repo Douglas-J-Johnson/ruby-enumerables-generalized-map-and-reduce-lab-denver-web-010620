@@ -20,7 +20,7 @@ def reduce(source_array, starting_point=nil)
     start_index = start_index + 1
   end
 
-  for i in 0...source_array.length
+  for i in start_index...source_array.length
     return_value = yield(return_value, source_array[i])
   end
 
